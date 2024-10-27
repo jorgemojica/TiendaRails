@@ -10,14 +10,14 @@ Rails.application.routes.draw do
 
   # Consultar rutas: http://127.0.0.1:3000/rails/info/routes
   # Tipo de Petición    Ruta                Controlador(NombreControlador#Método)   Nombre de la Ruta (Helper)
-  get                 '/products/new',    to: 'products#new',                     as: :new_product
-  delete '/products/:id', to: 'products#destroy'
-  patch '/products/:id', to: 'products#update'
-  post '/products', to: 'products#create'
-  get '/products/new', to: 'products#new', as: :new_product
-  get '/products', to: 'products#index'
-  get '/products/:id', to: 'products#show', as: :product
-  get '/products/:id/edit', to: 'products#edit', as: :edit_product
+  # get                 '/products/new',    to: 'products#new',                     as: :new_product
+  # delete '/products/:id', to: 'products#destroy'
+  # patch '/products/:id', to: 'products#update'
+  # post '/products', to: 'products#create'
+  # get '/products/new', to: 'products#new', as: :new_product
+  # get '/products', to: 'products#index'
+  # get '/products/:id', to: 'products#show', as: :product
+  # get '/products/:id/edit', to: 'products#edit', as: :edit_product
 
   # Las rutas anteriores pueden ser reemplazadas por esta línea dejando como ruta raíz la página que muestra todos los productos
   resources :products, path: '/products'
