@@ -1,0 +1,6 @@
+<h1>Category - <%= @category.name %></h1>
+<%= link_to 'Editar Categoría', edit_category_path(@category) %>
+<%= link_to 'Eliminar Categoría', category_path(@category), data: {
+    turbo_method: :delete,
+    turbo_confirm: 'Are you sure?'
+} %>
