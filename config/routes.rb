@@ -30,4 +30,8 @@ Rails.application.routes.draw do
   get '/categories/:id', to: 'categories#show', as: :category
   get '/categories/:id/edit', to: 'categories#edit', as: :edit_category
 
+  namespace :authentication, path: '', as: '' do
+    resources :users, only: [:new, :create]
+  end
+
 end
