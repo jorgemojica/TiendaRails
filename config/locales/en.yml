@@ -52,6 +52,11 @@ en:
               blank: "can't be blank"
   common:
     confirm: 'Are you sure?'
+  authentication:
+    sessions:
+      create:
+        created: 'Welcome!'
+        failed: 'Invalid Login'
   shared:
     header:
       add: 'Add product'

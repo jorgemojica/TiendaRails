@@ -20,6 +20,11 @@ es:
               blank: 'no puede estar vacío'
   common: 
     confirm: '¿Estás seguro que deseas eliminar el producto?'
+  authentication:
+    sessions:
+      create:
+        created: 'Bienvenido!'
+        failed: 'Login Inválido'
   products:
     edit:
       title: 'Editar Producto'
