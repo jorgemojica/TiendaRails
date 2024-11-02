@@ -21,6 +21,12 @@ Rails.application.routes.draw do
 
   # Las rutas anteriores pueden ser reemplazadas por esta línea dejando como ruta raíz la página que muestra todos los productos
   # resources crea siete rutas con los verbos HTTP por defecto
+  
+  namespace :authentication, path: '', as: '' do
+    resources :users, only: [:new, :create], path: '/register', path_names: { new: '/' }
+    resources :sessions, only: [:new, :create, :destroy], path: '/login', path_names: { new: '/' }
+  end
+
   resources :products, path: '/products'
 
   get '/categories', to: 'categories#index'
@@ -31,9 +37,4 @@ Rails.application.routes.draw do
   get '/categories/:id', to: 'categories#show', as: :category
   get '/categories/:id/edit', to: 'categories#edit', as: :edit_category
 
-  namespace :authentication, path: '', as: '' do
-    resources :users, only: [:new, :create]
-    resources :sessions, only: [:new, :create]
   end
-
-end

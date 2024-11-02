@@ -17,4 +17,10 @@ class Authentication::SessionsController < ApplicationController
     end
   end
 
+  def destroy
+    session.delete(:user_id)
+    redirect_to products_path, notice: 'destroyed'
+  end
+  
+
 end
