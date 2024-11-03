@@ -14,3 +14,5 @@
     turbo_method: :delete,
     turbo_confirm: t('common.confirm')
 } if @product.owner? %>
+
+<%= link_to "Ver mas productos de #{@product.user.username}", user_path(@product.user.username) %>

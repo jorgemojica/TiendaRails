@@ -8,6 +8,10 @@ class ApplicationController < ActionController::Base
     redirect_to products_path, alert: 'No Autorizado'
   end
 
+  rescue_from ActiveRecord::RecordNotFound do
+    redirect_to products_path, alert: 'Usuario no encontrado!'
+  end
+
   around_action :switch_locale
   before_action :set_current_user
   before_action :protect_pages
