@@ -39,4 +39,6 @@ Rails.application.routes.draw do
 
   resources :users, only: :show, path: '/user', param: :username
 
+  resources :favorites, only: [:index, :create, :destroy], param: :product_id
+
   end

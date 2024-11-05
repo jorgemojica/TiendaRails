@@ -15,11 +15,26 @@ class Product < ApplicationRecord
   validates :title, presence: true
   validates :description, presence: true
   validates :price, presence: true
+
+  has_many :favorites, dependent: :destroy
+
   belongs_to :category
   belongs_to :user, default: -> { Current.user }
 
   def owner?
     user_id == Current.user&.id
+  end
+
+  def favorite!
+    favorites.create(user: Current.user)
+  end
+
+  def unfavorite!
+    favorite.destroy
+  end
+
+  def favorite
+    favorites.find_by(user: Current.user)
   end
   
 end

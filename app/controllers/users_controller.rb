@@ -7,6 +7,7 @@ class UsersController < ApplicationController
     if @products.present? && params[:username]
       @products = @products.where(user_id: @user.id)
     end
-    @pagy, @products = pagy_countless(if @products.present? then @products end, limit: 5)
+    # @pagy, @products = pagy_countless(if @products.present? then @products end, limit: 5)
+    @pagy, @products = pagy_countless(FindProducts.new.call({ user_id: @user.id }), limit: 5)
   end
 end
