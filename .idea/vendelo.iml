@@ -101,6 +101,8 @@
     <orderEntry type="library" scope="PROVIDED" name="sprockets-rails (v3.4.2, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="stimulus-rails (v1.3.3, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="stringio (v3.1.0, ruby-3.2.2-p53) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tailwindcss-rails (v3.0.0, ruby-3.2.2-p53) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tailwindcss-ruby (v3.4.14, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v1.3.1, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="timeout (v0.4.1, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="turbo-rails (v2.0.5, ruby-3.2.2-p53) [gem]" level="application" />
@@ -196,104 +198,104 @@
   </component>
   <component name="RailsPaths" isManagedAutomatically="true">
     <entry key="app">
-      <value>file://$MODULE_DIR$/../vendelo\app</value>
+      <value>file://$MODULE_DIR$/../TiendaRails\app</value>
     </entry>
     <entry key="app/assets">
-      <value>file://$MODULE_DIR$/../vendelo\app/assets</value>
+      <value>file://$MODULE_DIR$/../TiendaRails\app/assets</value>
     </entry>
     <entry key="app/channels">
-      <value>file://$MODULE_DIR$/../vendelo\app/channels</value>
+      <value>file://$MODULE_DIR$/../TiendaRails\app/channels</value>
     </entry>
     <entry key="app/controllers">
-      <value>file://$MODULE_DIR$/../vendelo\app/controllers</value>
+      <value>file://$MODULE_DIR$/../TiendaRails\app/controllers</value>
     </entry>
     <entry key="app/helpers">
-      <value>file://$MODULE_DIR$/../vendelo\app/helpers</value>
+      <value>file://$MODULE_DIR$/../TiendaRails\app/helpers</value>
     </entry>
     <entry key="app/mailers">
-      <value>file://$MODULE_DIR$/../vendelo\app/mailers</value>
+      <value>file://$MODULE_DIR$/../TiendaRails\app/mailers</value>
     </entry>
     <entry key="app/models">
-      <value>file://$MODULE_DIR$/../vendelo\app/models</value>
+      <value>file://$MODULE_DIR$/../TiendaRails\app/models</value>
     </entry>
     <entry key="app/views">
-      <value>file://$MODULE_DIR$/../vendelo\app/views</value>
+      <value>file://$MODULE_DIR$/../TiendaRails\app/views</value>
     </entry>
     <entry key="config">
-      <value>file://$MODULE_DIR$/../vendelo\config</value>
+      <value>file://$MODULE_DIR$/../TiendaRails\config</value>
     </entry>
     <entry key="config/cable">
-      <value>file://$MODULE_DIR$/../vendelo\config/cable.yml</value>
+      <value>file://$MODULE_DIR$/../TiendaRails\config/cable.yml</value>
     </entry>
     <entry key="config/database">
-      <value>file://$MODULE_DIR$/../vendelo\config/database.yml</value>
+      <value>file://$MODULE_DIR$/../TiendaRails\config/database.yml</value>
     </entry>
     <entry key="config/environment">
-      <value>file://$MODULE_DIR$/../vendelo\config/environment.rb</value>
+      <value>file://$MODULE_DIR$/../TiendaRails\config/environment.rb</value>
     </entry>
     <entry key="config/environments">
-      <value>file://$MODULE_DIR$/../vendelo\config/environments</value>
+      <value>file://$MODULE_DIR$/../TiendaRails\config/environments</value>
     </entry>
     <entry key="config/initializers">
-      <value>file://$MODULE_DIR$/../vendelo\config/initializers</value>
+      <value>file://$MODULE_DIR$/../TiendaRails\config/initializers</value>
     </entry>
     <entry key="config/locales">
-      <value>file://$MODULE_DIR$/../vendelo\config/locales</value>
+      <value>file://$MODULE_DIR$/../TiendaRails\config/locales</value>
     </entry>
     <entry key="config/routes">
-      <value>file://$MODULE_DIR$/../vendelo\config/routes</value>
+      <value>file://$MODULE_DIR$/../TiendaRails\config/routes</value>
     </entry>
     <entry key="config/routes.rb">
-      <value>file://$MODULE_DIR$/../vendelo\config/routes.rb</value>
+      <value>file://$MODULE_DIR$/../TiendaRails\config/routes.rb</value>
     </entry>
     <entry key="config/secrets">
-      <value>file://$MODULE_DIR$/../vendelo\config</value>
+      <value>file://$MODULE_DIR$/../TiendaRails\config</value>
     </entry>
     <entry key="db">
-      <value>file://$MODULE_DIR$/../vendelo\db</value>
+      <value>file://$MODULE_DIR$/../TiendaRails\db</value>
     </entry>
     <entry key="db/migrate">
-      <value>file://$MODULE_DIR$/../vendelo\db/migrate</value>
+      <value>file://$MODULE_DIR$/../TiendaRails\db/migrate</value>
     </entry>
     <entry key="db/seeds.rb">
-      <value>file://$MODULE_DIR$/../vendelo\db/seeds.rb</value>
+      <value>file://$MODULE_DIR$/../TiendaRails\db/seeds.rb</value>
     </entry>
     <entry key="lib">
-      <value>file://$MODULE_DIR$/../vendelo\lib</value>
+      <value>file://$MODULE_DIR$/../TiendaRails\lib</value>
     </entry>
     <entry key="lib/assets">
-      <value>file://$MODULE_DIR$/../vendelo\lib/assets</value>
+      <value>file://$MODULE_DIR$/../TiendaRails\lib/assets</value>
     </entry>
     <entry key="lib/tasks">
-      <value>file://$MODULE_DIR$/../vendelo\lib/tasks</value>
+      <value>file://$MODULE_DIR$/../TiendaRails\lib/tasks</value>
     </entry>
     <entry key="lib/templates">
-      <value>file://$MODULE_DIR$/../vendelo\lib/templates</value>
+      <value>file://$MODULE_DIR$/../TiendaRails\lib/templates</value>
     </entry>
     <entry key="log">
-      <value>file://$MODULE_DIR$/../vendelo\log/development.log</value>
+      <value>file://$MODULE_DIR$/../TiendaRails\log/development.log</value>
     </entry>
     <entry key="public">
-      <value>file://$MODULE_DIR$/../vendelo\public</value>
+      <value>file://$MODULE_DIR$/../TiendaRails\public</value>
     </entry>
     <entry key="public/javascripts">
-      <value>file://$MODULE_DIR$/../vendelo\public/javascripts</value>
+      <value>file://$MODULE_DIR$/../TiendaRails\public/javascripts</value>
     </entry>
     <entry key="public/stylesheets">
-      <value>file://$MODULE_DIR$/../vendelo\public/stylesheets</value>
+      <value>file://$MODULE_DIR$/../TiendaRails\public/stylesheets</value>
     </entry>
     <entry key="test/mailers/previews">
       <value>file://$MODULE_DIR$/test/mailers/previews</value>
-      <value>file://$MODULE_DIR$/../vendelo\test/mailers/previews</value>
+      <value>file://$MODULE_DIR$/../TiendaRails\test/mailers/previews</value>
     </entry>
     <entry key="tmp">
-      <value>file://$MODULE_DIR$/../vendelo\tmp</value>
+      <value>file://$MODULE_DIR$/../TiendaRails\tmp</value>
     </entry>
     <entry key="vendor">
-      <value>file://$MODULE_DIR$/../vendelo\vendor</value>
+      <value>file://$MODULE_DIR$/../TiendaRails\vendor</value>
     </entry>
     <entry key="vendor/assets">
-      <value>file://$MODULE_DIR$/../vendelo\vendor/assets</value>
+      <value>file://$MODULE_DIR$/../TiendaRails\vendor/assets</value>
     </entry>
   </component>
 </module>

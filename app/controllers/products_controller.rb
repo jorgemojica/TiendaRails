@@ -4,7 +4,7 @@ class ProductsController < ApplicationController
 
   def index
     @categories = Category.all.order(name: :asc).load_async
-    @pagy, @products = pagy_countless(FindProducts.new.call(product_params_index), limit: 5)
+    @pagy, @products = pagy_countless(FindProducts.new.call(product_params_index), limit: 12)
   end
 
   def show
