@@ -1,36 +1,30 @@
 <%= form_with model: @product do |form| %>
-
-    <% @product.errors.full_messages.each do |error| %>
-        <div>
-            <%= error %>
-        </div>
-    <% end %>
-
+  <% @product.errors.full_messages.each do |error| %>
     <div>
-        <%= form.label :title %>
-        <%= form.text_field :title %>
+      <%= error %>
     </div>
+  <% end %>
 
-    <div>
-        <%= form.label :description %>
-        <%= form.text_area :description %>
-    </div>
+  <div>
+    <%= form.text_field :title, placeholder: "Título", class: "rounded-2xl border-gray-200 mb-4 w-full" %>
+  </div>
 
-    <div>
-        <%= form.label :price %>
-        <%= form.number_field :price%>
-    </div>
+  <div>
+    <%= form.text_area :description, placeholder: "Descripción", class: "rounded-2xl border-gray-200 mb-4 w-full", rows: 5 %>
+  </div>
 
-    <div>
-        <%= form.label :category_id %>
-        <%= form.collection_select :category_id, Category.all.order(name: :asc), :id, :name %>
-    </div>
+  <div>
+    <%= form.number_field :price, placeholder: "Price", class: "rounded-2xl border-gray-200 mb-4 w-full" %>
+  </div>
 
-    <div>
-        <%= form.label :photo %>
-        <%= form.file_field :photo%>
-    </div>
+  <div>
+    <%= form.collection_select :category_id, Category.all.order(name: :asc), :id, :name, { prompt: "Categoría" }, { class: "rounded-2xl border-gray-200 mb-4 w-full text-gray-500"} %>
+  </div>
 
-    <%= form.submit %>
+  <div class="rounded-2xl border-gray-200 mb-4 w-full border-[1px] p-2 text-gray-500">
+    <%= form.label :photo %>
+    <%= form.file_field :photo %>
+  </div>
 
+  <%= form.submit class: "px-4 py-2 font-semibold text-sm bg-cyan-500 text-white rounded-2xl cursor-pointer shadow-sm" %>
 <% end %>
