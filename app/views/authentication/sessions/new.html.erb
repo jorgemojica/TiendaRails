@@ -2,16 +2,16 @@
 
     <div>
         <%= form.label :login %>
-        <%= form.text_field :login, required: true %>
+        <%= form.text_field :login, class: "rounded-2xl border-gray-200 mt-4 mb-4", required: true %>
     </div>
 
     <div>
         <%= form.label :password %>
-        <%= form.password_field :password, required: true %>
+        <%= form.password_field :password, class: "rounded-2xl border-gray-200 mb-4", required: true %>
     </div>
 
     <div>
-        <%= form.submit %>
+        <%= form.submit class: "px-4 py-2 font-semibold text-sm bg-cyan-500 text-white rounded-2xl cursor-pointer shadow-sm" %>
     </div>
 
 <% end %>

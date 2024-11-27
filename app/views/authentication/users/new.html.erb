@@ -8,21 +8,21 @@
 
     <div>
         <%= form.label :email %>
-        <%= form.email_field :email, required: true %>
+        <%= form.email_field :email, class: "rounded-2xl border-gray-200 mt-4 mb-4", required: true %>
     </div>
 
     <div>
         <%= form.label :username %>
-        <%= form.text_field :username, required: true %>
+        <%= form.text_field :username, class: "rounded-2xl border-gray-200 mb-4", required: true %>
     </div>
 
     <div>
         <%= form.label :password %>
-        <%= form.password_field :password, required: true %>
+        <%= form.password_field :password, class: "rounded-2xl border-gray-200 mb-4", required: true %>
     </div>
 
     <div>
-        <%= form.submit %>
+        <%= form.submit class: "px-4 py-2 font-semibold text-sm bg-cyan-500 text-white rounded-2xl cursor-pointer shadow-sm" %>
     </div>
 
 <% end %>
